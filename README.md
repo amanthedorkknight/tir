@@ -48,6 +48,15 @@ redis-server
 # Run migrations (ONLY NEEDS TO BE RUN ON SETUP or when you change django models)
 pipenv run python manage.py migrate
 
+### FIRST TIME SETUP
+# Open python shell
+ pipenv run python manage.py shell
+
+# Inside python shell
+>>> from apollo.models import *
+>>> TargetWord.objects.create(word=‘car’)
+>>> exit()
+
 # Run the app
 pipenv run python manage.py runserver
 ```
