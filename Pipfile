@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==1.10.5"
+django = "==1.11.28"
 channels = "==1.0.3"
 "pywin32" = "*"
 daphne = "==1.3"
